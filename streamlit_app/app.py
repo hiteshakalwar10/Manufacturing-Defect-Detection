@@ -103,7 +103,7 @@ def generate_pdf_report(pred_class, confidence, top_preds, img_path, gradcam_pat
     elements.append(Spacer(1, 20))
 
     elements.append(Paragraph("Uploaded Image & Grad-CAM Visualization", styles["Heading2"]))
-    elements.append(Paragraph("🔴🟡Red/Yellow = high model attention (defect area) | 🔵🟢Blue/Green = low attention (background)", styles["Normal"]))
+    elements.append(Paragraph("Red/Yellow = high model attention (defect area) | Blue/Green = low attention (background)", styles["Normal"]))
     elements.append(Spacer(1, 10))
 
     img_table = Table([[
